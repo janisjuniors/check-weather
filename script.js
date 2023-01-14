@@ -86,7 +86,7 @@ cityInput.addEventListener('keyup', (event) => {
 checkWeatherButton.addEventListener('click', () => {
     if (!cityInput.value) return;
 
-    setErrorState();
+    setPendingState();
     const apiUrl = `${openWeatherBaseUrl}?q=${cityInput.value}&units=metric&appid=${apiKey}`;
     requestWeatherData(apiUrl).then(setWeatherDetails);
 })
