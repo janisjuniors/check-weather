@@ -30,7 +30,7 @@ const setWeatherDetails = (details) => {
     const weatherSection = wrapper.querySelector('.weather-section');
 
     // Set the data in places it needs to be displayed.
-    weatherImage.src = `/icons/${icon}.svg`;
+    weatherImage.src = `icons/${icon}.svg`;
     weatherSection.querySelector('.weather').innerText = description.replace(description[0], description[0].toUpperCase());
     weatherSection.querySelector('.temperature .degree-number').innerText = Math.round(temp);
     weatherSection.querySelector('.location span:last-child').innerText = `${city}, ${country}`;
@@ -77,9 +77,8 @@ const onSuccess = (position) => {
 
 cityInput.addEventListener('keyup', (event) => {
     if (event.key === 'Enter' && cityInput.value) {
-        setPendingState();
-
         const apiUrl = `${openWeatherBaseUrl}?q=${cityInput.value}&units=metric&appid=${apiKey}`;
+        setPendingState();
         requestWeatherData(apiUrl).then(setWeatherDetails);
     }
 });
