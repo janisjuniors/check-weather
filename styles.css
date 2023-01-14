@@ -54,6 +54,7 @@ body {
 
 .wrapper header {
     display: flex;
+    justify-content: space-between;
     align-items: center;
     column-gap: 0.4rem;
     padding: 1.2rem;
@@ -69,6 +70,16 @@ body {
 
 .wrapper.location-input header .header-icon {
     display: none;
+}
+
+.wrapper header .header-title-container {
+    display: flex;
+    align-items: center;
+}
+
+.wrapper header .current-time {
+    font-size: 1.6rem;
+    padding-right: 1.2rem;
 }
 
 header .header-back-button {
