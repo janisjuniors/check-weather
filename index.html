@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Check Weather</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <link rel="icon" type="image/x-icon" href="/icons/11d.svg">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<div class="wrapper location-input">
+    <header>
+        <button class="header-back-button">
+            <span class="header-icon material-symbols-outlined">chevron_left</span>
+        </button>
+        Check Weather
+    </header>
+    <section class="input-section">
+        <p class="info-text"></p>
+        <div class="input-container">
+            <input type="text" placeholder="London" spellcheck="false" required>
+            <button class="check-weather">Check</button>
+        </div>
+        <div class="separator"></div>
+        <button class="get-location">Get Your Location</button>
+    </section>
+    <section class="weather-section">
+        <img src="#" alt="Weather Icon">
+        <div class="temperature">
+            <span class="degree-number">_</span>
+            <span class="degree-symbol">&deg;</span>C
+        </div>
+        <div class="weather">_</div>
+        <div class="location">
+            <span class="material-symbols-outlined">location_on</span>
+            <span>_, _</span>
+        </div>
+        <div class="bottom-details">
+            <div class="column feels">
+                <span class="details-icon material-symbols-outlined">device_thermostat</span>
+                <div class="details">
+                    <div class="temperature">
+                        <div class="temperature-wrapper">
+                            <span class="degree-number">_</span>
+                            <span class="degree-symbol">&deg;</span>C
+                        </div>
+                        <p>Feels like</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column humidity">
+                <span class="details-icon material-symbols-outlined">water_drop</span>
+                <div class="details">
+                    <div class="humidity">
+                        <span class="humidity-number">_</span>%
+                        <p>Humidity</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+</body>
+</html>
