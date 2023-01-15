@@ -53,8 +53,8 @@ const setPendingState = () => {
     infoText.classList.add('pending');
 };
 
-const setErrorState = (error) => {
-    infoText.innerText = error.message;
+const setErrorState = (errorMessage) => {
+    infoText.innerText = errorMessage;
     infoText.classList.add('error');
 };
 
