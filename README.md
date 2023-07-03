@@ -1,7 +1,7 @@
 <h1 align="center">Check Weather</h1>
 <p align="center">Simple Weather Checking Application Made With Vanilla Javascript</p>
 
-<p align="center">Demo &#8211; <a href="https://janisjuniors.github.io/Check-Weather/">see here</a></p>
+<p align="center">Demo &#8211; <a href="https://janisjuniors.github.io/check-weather/">see here</a></p>
 
 <div align="center">
   <img src="https://user-images.githubusercontent.com/104723218/212535232-7515c5b0-bd45-4b84-81e8-165d21698626.png" alt="Check Weather App" width="300">
